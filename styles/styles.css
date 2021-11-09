@@ -5,8 +5,8 @@
 
 header{
     padding-bottom: 1.1%;
-    border-bottom: 1px solid black;
-    box-shadow;
+    position: fixed;
+    background-color: white;
 }
 
 .containerHeader{
@@ -20,11 +20,33 @@ button{
     padding: 1.1%;
     border-radius: 30px;
     cursor: pointer;
+    font-size: 15px;
+    background-color: white;
+}
+
+.hoy{
+    transition-duration: 0.4s;
+    border: none;
+}
+
+.hoy:hover{
+    background-color: black;
+    color: white;
+}
+
+.inicio{
+    transition-duration: 0.4s;
+    border: none;
+}
+
+.inicio:hover{
+    background-color: black;
+    color: white
 }
 
 .buscador{
     display: flex;
-    background-color:silver;
+    background-color:whitesmoke;
     padding: 1.1%;
     border-radius: 30px;
     margin-left: .5%;
@@ -38,12 +60,74 @@ button{
 input{
     padding-left: .5%;
     border: none;
-    background-color: silver;
-    width: 900px;
+    background-color: whitesmoke;
+    width: 1080px;
 }
 
 .logo
 {
     width: 2.5%;
     cursor: pointer;
+    margin-right: .5%;
+    transition-duration: 00.4s;
+    padding: .5%;
+    border-radius: 50%;
+}
+
+.logo:hover{
+    background-color: gray;
+    
+}
+
+.notifications{
+    margin-left: .5%;
+    cursor: pointer;
+    transition-duration: 00.4s;
+    padding: .9%;
+    border-radius: 50%;
+}
+
+.notifications:hover{
+    background-color: gray;
+}
+
+.messages{
+    margin-left: .5%;
+    cursor: pointer;
+    transition-duration: 00.4s;
+    padding: .9%;
+    border-radius: 50%;
+}
+
+.messages:hover{
+    background-color: gray;
+}
+
+.profilePhoto{
+    padding: .6%;
+    width: 2%;
+    margin-left: .5%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 00.4s;
+}
+
+.profilePhoto:hover{
+    background-color: gray;
+}
+
+.down{
+    margin-left: .5%;
+    cursor: pointer;
+    transition-duration: 00.4s;
+    padding: .5%;
+    border-radius: 50%;
+}
+
+.down:hover{
+    background-color: gray;
+}
+
+.mainContainer{
+    padding-top: 5%;
 }
