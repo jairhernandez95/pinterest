@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 30px
+}
+
+header{
+    width: 1600px;
+    height: auto;
+    border: 1px solid grey;
+    box-shadow:blue;
+    padding: 15px;;
+}
+
+.logo
+{
+    width: 20px;
+}
+
+.inicio{
+    border-radius: 30px;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.hoy{
+    border-radius: 30px;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.busqueda{
+    display: inline;
+}
+
+.searchBox{
+    display: inline-block;
+    margin-left: 1em;
+    background-color:darkgray;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+textarea{
+    width: 200px;
+}
