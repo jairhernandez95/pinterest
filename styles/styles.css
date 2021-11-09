@@ -3,53 +3,47 @@
     padding: 0;
 }
 
-body{
-    font-size: 30px
+header{
+    padding-bottom: 1.1%;
+    border-bottom: 1px solid black;
+    box-shadow;
 }
 
-header{
-    width: 1600px;
-    height: auto;
-    border: 1px solid grey;
-    box-shadow:blue;
-    padding: 15px;;
+.containerHeader{
+    display: flex;
+    align-items: center;
+    padding-top: 1.1%;
+    padding-left: 1.1%;
+}
+
+button{
+    padding: 1.1%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.buscador{
+    display: flex;
+    background-color:silver;
+    padding: 1.1%;
+    border-radius: 30px;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+.lupa{
+    padding-left: .5%;
+}
+
+input{
+    padding-left: .5%;
+    border: none;
+    background-color: silver;
+    width: 900px;
 }
 
 .logo
 {
-    width: 20px;
-}
-
-.inicio{
-    border-radius: 30px;
-    padding: 12px;
-    font-size: 1.2rem;
-    background-color: black;
-    color: white;
+    width: 2.5%;
     cursor: pointer;
-}
-
-.hoy{
-    border-radius: 30px;
-    padding: 12px;
-    font-size: 1.2rem;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-
-.busqueda{
-    display: inline;
-}
-
-.searchBox{
-    display: inline-block;
-    margin-left: 1em;
-    background-color:darkgray;
-    border-radius: 30px;
-    padding: 8px;
-}
-
-textarea{
-    width: 200px;
 }
