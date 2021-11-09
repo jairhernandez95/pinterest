@@ -61,7 +61,7 @@ input{
     padding-left: .5%;
     border: none;
     background-color: whitesmoke;
-    width: 1080px;
+    width: 960px;
 }
 
 .logo
@@ -129,5 +129,5 @@ input{
 }
 
 .mainContainer{
-    padding-top: 5%;
+    padding-top: 5.5%;
 }
