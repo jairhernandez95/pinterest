@@ -150,18 +150,21 @@ input:hover{
 /* Estilos del main */
 
 main{
-    padding-top: 60px
+    padding-top: 60px;
+    width: 100%
 }
 
 .mainContainer{
     border: 1px solid black;
     display: grid;
-    grid-template-columns: repeat(5, 16%);
-    grid-template-rows: 100px 200px 150px 250px 150px;
-    justify-items: stretch;
-    gap:5% 5%;
-    align-items:flex-start;
-    position:static
+    grid-template-columns: repeat(auto-fill,240px);
+    grid-template-rows: 100px 100px;
+    gap:20px 20px;
+    align-items: center;
+}
+
+.item{
+    border-radius: 20px;
 }
 
 .item-1{
@@ -171,10 +174,30 @@ main{
     background-color: greenyellow;
     color: grey;
 }
-
 .item-2{
     width: 100%;
-    height: 60%;
+    height: 100%;
+    border: 1px dotted goldenrod;
+    background-color: greenyellow;
+    color: grey;
+}
+.item-3{
+    width: 100%;
+    height: 100%;
+    border: 1px dotted goldenrod;
+    background-color: greenyellow;
+    color: grey;
+}
+.item-4{
+    width: 100%;
+    height: 100%;
+    border: 1px dotted goldenrod;
+    background-color: greenyellow;
+    color: grey;
+}
+.item-5{
+    width: 100%;
+    height: 100%;
     border: 1px dotted goldenrod;
     background-color: greenyellow;
     color: grey;
