@@ -83,7 +83,7 @@ button{
 input{
     padding-left: 2px; /*.5%*/
     border: none;
-    background-color: whitesmoke;
+    background-color: transparent;
     width: 100%;
 }
 
