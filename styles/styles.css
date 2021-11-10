@@ -6,9 +6,9 @@
 /* Estilos del header */
 
 header{
-    position:fixed;
     background-color:orange;
-    width: 1366px;
+    width: 100%; /*width en % height en pixeles*/
+    position:fixed;
 }
 
 .containerHeader{
@@ -68,6 +68,7 @@ button{
     border-radius: 30px;
     margin-left: 5px; /*.5%*/
     margin-right: 2px; /*.5%*/
+    width: 70%;
 }
 
 .buscador:hover{
@@ -83,11 +84,15 @@ input{
     padding-left: 2px; /*.5%*/
     border: none;
     background-color: whitesmoke;
-    width: 925px;
+    width: 100%;
 }
 
 input:hover{
     background-color: #f0f0f0;
+}
+
+.thirdSection{
+    display: flex;
 }
 
 .notifications{
@@ -118,7 +123,7 @@ input:hover{
 
 .profilePhoto{
     padding: 10px; /*.6%*/
-    width: 2%; 
+    width: 25px; 
     margin-left: 2px; /*.5%*/
     border-radius: 50%;
     cursor: pointer;
@@ -130,6 +135,7 @@ input:hover{
 }
 
 .down{
+    width: 8px;
     margin-left: 2px; /*.5%*/
     cursor: pointer;
     transition-duration: 00.4s;
@@ -143,6 +149,33 @@ input:hover{
 
 /* Estilos del main */
 
+main{
+    padding-top: 60px
+}
+
 .mainContainer{
-    padding-top:65px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(5, 16%);
+    grid-template-rows: 100px 200px 150px 250px 150px;
+    justify-items: stretch;
+    gap:5% 5%;
+    align-items:flex-start;
+    position:static
+}
+
+.item-1{
+    width: 100%;
+    height: 100%;
+    border: 1px dotted goldenrod;
+    background-color: greenyellow;
+    color: grey;
+}
+
+.item-2{
+    width: 100%;
+    height: 60%;
+    border: 1px dotted goldenrod;
+    background-color: greenyellow;
+    color: grey;
 }
