@@ -3,35 +3,42 @@
     padding: 0;
 }
 
+/* Estilos del header */
+
 header{
-    padding-bottom: 1.1%;
-    position: fixed;
-    background-color: white;
+    position:fixed;
+    background-color:orange;
+    width: 1366px;
 }
 
 .containerHeader{
     display: flex;
     align-items: center;
-    padding-top: 1.1%;
-    padding-left: 1.1%;
+    padding-top: 5px; /*1.1%*/
+    padding-left: 5px; /*1.1%*/
+    padding-bottom: 5px;
+}
+
+.logo{
+    width: 30px; /*2.5%*/
+    cursor: pointer;
+    margin-right: 2px; /*.5%*/
+    transition-duration: 00.4s;
+    padding: 9px; /*.5%*/
+    border-radius: 50%;
+}
+
+.logo:hover{
+    background-color: #f0f0f0;
+    
 }
 
 button{
-    padding: 1.1%;
+    padding: 16px; /*1.1%*/
     border-radius: 30px;
     cursor: pointer;
     font-size: 15px;
     background-color: white;
-}
-
-.hoy{
-    transition-duration: 0.4s;
-    border: none;
-}
-
-.hoy:hover{
-    background-color: black;
-    color: white;
 }
 
 .inicio{
@@ -44,90 +51,98 @@ button{
     color: white
 }
 
+.hoy{
+    transition-duration: 0.4s;
+    border: none;
+}
+
+.hoy:hover{
+    background-color: black;
+    color: white;
+}
+
 .buscador{
     display: flex;
     background-color:whitesmoke;
-    padding: 1.1%;
+    padding: 16px; /*1.1%*/
     border-radius: 30px;
-    margin-left: .5%;
-    margin-right: .5%;
+    margin-left: 5px; /*.5%*/
+    margin-right: 2px; /*.5%*/
+}
+
+.buscador:hover{
+    background-color: #f0f0f0;
 }
 
 .lupa{
-    padding-left: .5%;
+    padding-left: 5px; /*.5%*/
+    padding-right: 7px;
 }
 
 input{
-    padding-left: .5%;
+    padding-left: 2px; /*.5%*/
     border: none;
     background-color: whitesmoke;
-    width: 960px;
+    width: 925px;
 }
 
-.logo
-{
-    width: 2.5%;
-    cursor: pointer;
-    margin-right: .5%;
-    transition-duration: 00.4s;
-    padding: .5%;
-    border-radius: 50%;
-}
-
-.logo:hover{
-    background-color: gray;
-    
+input:hover{
+    background-color: #f0f0f0;
 }
 
 .notifications{
-    margin-left: .5%;
+    width: 25px;
+    margin-left: 2px; /*.5%*/
     cursor: pointer;
     transition-duration: 00.4s;
-    padding: .9%;
+    padding: 12px; /*.9%*/
     border-radius: 50%;
 }
 
 .notifications:hover{
-    background-color: gray;
+    background-color: #f0f0f0
 }
 
 .messages{
-    margin-left: .5%;
+    width: 25px;
+    margin-left: 2px; /*.5%*/
     cursor: pointer;
     transition-duration: 00.4s;
-    padding: .9%;
+    padding: 12px; /*.9%*/
     border-radius: 50%;
 }
 
 .messages:hover{
-    background-color: gray;
+    background-color: #f0f0f0;
 }
 
 .profilePhoto{
-    padding: .6%;
-    width: 2%;
-    margin-left: .5%;
+    padding: 10px; /*.6%*/
+    width: 2%; 
+    margin-left: 2px; /*.5%*/
     border-radius: 50%;
     cursor: pointer;
     transition-duration: 00.4s;
 }
 
 .profilePhoto:hover{
-    background-color: gray;
+    background-color: #f0f0f0;
 }
 
 .down{
-    margin-left: .5%;
+    margin-left: 2px; /*.5%*/
     cursor: pointer;
     transition-duration: 00.4s;
-    padding: .5%;
+    padding: 2px; /*.5%*/
     border-radius: 50%;
 }
 
 .down:hover{
-    background-color: gray;
+    background-color: #f0f0f0;
 }
 
+/* Estilos del main */
+
 .mainContainer{
-    padding-top: 5.5%;
+    padding-top:65px;
 }
