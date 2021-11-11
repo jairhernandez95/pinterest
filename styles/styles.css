@@ -133,43 +133,60 @@ input:hover{
     background-color: #f0f0f0;
 }
 
-/* Estilos del main */
-main{padding-top: 85px; width: 100%;}
-.mainContainer{
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
+/* USANDO GRID en CONTAINER y FLEX en ITEMSy/oContenido */
+.containerGRID{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 235px);
-    gap:40px 20px;
+    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-rows: repeat(auto-fill, auto);
+    gap: 40px 40px;
+    padding-top: 90px;
     justify-content: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
 }
 
-/* Estilos a todos la imagen y a la información de la foto*/
-.adjustImage{width: 100%; border-radius: 20px; cursor: pointer;}
-.imagen{overflow:hidden;}
+.subContainerFLEX{display: flex; flex-flow: column;}
+.adjustImage{width: 100%; border-radius: 20px;}
+.item{}
+
 /* Media Queries */
-@media (max-width: 849px) {
-    .hoy{display: none;}
-}
+@media (max-width: 849px) {.hoy{display: none;}}
 @media (max-width: 499px){
-    .buscador{
-        display: none;
+    .buscador{display: none;}
+    input{display: none;}
+    .lupaMenosWidth{display: inline; width: 100%; margin-left: 2px; padding:15px; border-radius: 50%;}
+    .lupaMenosWidth:hover{background-color: #f0f0f0;}}
+
+/* USANDO SOLO FLEX y SOLO GRID
+
+    Estilos del main
+    main{padding-top: 85px; width: 100%;}
+    .container{
+        FLEX
+            display: flex;
+            flex-flow: column wrap;
+            height: 2000px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            align-items: center;
+            justify-items:flex-start;
+            gap: 20px 20px;
+            width: auto;
+
+        GRID
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 235px);
+            gap:20px 20px;
+            justify-content: center;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
     }
-    input{
-        display: none;
-    }
-    .lupaMenosWidth{
-        display: inline;
-        width: 100%;
-        margin-left: 2px;
-        padding:15px;
-        border-radius: 50%;
-    }
-    .lupaMenosWidth:hover{
-        background-color: #f0f0f0;
-    }
-}
+
+    Estilos a todos la imagen y a la información de la foto
+            .adjustImage{width: 100%; border-radius: 20px; cursor: pointer;}
+            .item{width: 160px;}
+
+
+    USANDO SOLO FLEX */
+
+
