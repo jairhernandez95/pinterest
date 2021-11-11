@@ -1,6 +1,8 @@
+/* Estilos a todo el documento */
 *{
     margin: 0;
     padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 /* Estilos del header */
@@ -60,7 +62,7 @@ button{
     border-radius: 30px;
     margin-left: 5px; /*.5%*/
     margin-right: 2px; /*.5%*/
-    width: 70%;
+    width: 100%;
 }
 .buscador:hover{
     background-color: #f0f0f0;
@@ -80,6 +82,10 @@ input:hover{
 }
 .thirdSection{
     display: flex;
+    align-content: flex-end;
+}
+.lupaMenosWidth{
+    display: none;
 }
 .notifications{
     width: 25px;
@@ -119,27 +125,51 @@ input:hover{
     margin-left: 2px; /*.5%*/
     cursor: pointer;
     transition-duration: 00.4s;
-    padding: 3px; /*.5%*/
+    padding: 15px; /*.5%*/
     border-radius: 50%;
-    margin-right: 2px;
+    margin-right: 10px;
 }
 .down:hover{
     background-color: #f0f0f0;
 }
 
 /* Estilos del main */
-
-main{padding-top: 90px; width: 100%;}
+main{padding-top: 85px; width: 100%;}
 .mainContainer{
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
     display: grid;
-    grid-template-columns: repeat(auto-fill, 235px);
+    grid-template-columns: repeat(5, 235px);
     gap:40px 20px;
     justify-content: center;
     margin-left: 5px;
     margin-right: 5px;
+    margin-bottom: 5px;
 }
 
-/* Estilos a todos los items */
-.adjustImage{width:100%; border-radius: 20px; cursor: pointer;}
-
-.infoPhoto{font-family:Arial, Helvetica, sans-serif;}
+/* Estilos a todos la imagen y a la información de la foto*/
+.adjustImage{width: 100%; border-radius: 20px; cursor: pointer;}
+.imagen{overflow:hidden;}<
+/* Media Queries */
+@media (max-width: 849px) {
+    .hoy{display: none;}
+}
+@media (max-width: 499px){
+    .buscador{
+        display: none;
+    }
+    input{
+        display: none;
+    }
+    .lupaMenosWidth{
+        display: inline;
+        width: 100%;
+        margin-left: 2px;
+        padding:15px;
+        border-radius: 50%;
+    }
+    .lupaMenosWidth:hover{
+        background-color: #f0f0f0;
+    }
+}
