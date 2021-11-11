@@ -136,16 +136,32 @@ input:hover{
 /* USANDO GRID en CONTAINER y FLEX en ITEMSy/oContenido */
 .containerGRID{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-columns: repeat(auto-fill, 250px);
     grid-template-rows: repeat(auto-fill, auto);
-    gap: 40px 40px;
+    gap: 40px 20px;
     padding-top: 90px;
+    padding-bottom: 60px;
     justify-content: center;
 }
-
 .subContainerFLEX{display: flex; flex-flow: column;}
-.adjustImage{width: 100%; border-radius: 20px;}
-.item{}
+
+.item{
+    padding-top: 35px;
+}
+
+.adjustImage{width: 100%; height: auto; border-radius: 20px; cursor: zoom-in; background-color: transparent; transition-duration: 0.04s;}
+
+.save{
+
+}
+
+.overImage{
+    display: grid;
+    position: absolute;
+}
+
+.upload{cursor: pointer;}
+.option{cursor: pointer}
 
 /* Media Queries */
 @media (max-width: 849px) {.hoy{display: none;}}
