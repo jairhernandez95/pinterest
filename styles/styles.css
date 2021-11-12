@@ -82,7 +82,7 @@ input:hover{
 }
 .thirdSection{
     display: flex;
-    align-content: flex-end;
+    align-content: end;
 }
 .lupaMenosWidth{
     display: none;
@@ -139,7 +139,7 @@ input:hover{
     grid-template-columns: repeat(auto-fill, 250px);
     grid-template-rows: repeat(auto-fill, auto);
     gap: 40px 20px;
-    padding-top: 90px;
+    padding-top: 50px;
     padding-bottom: 60px;
     justify-content: center;
 }
@@ -166,6 +166,7 @@ input:hover{
 /* Media Queries */
 @media (max-width: 849px) {.hoy{display: none;}}
 @media (max-width: 499px){
+    .thirdSection{position: flex-end;}
     .buscador{display: none;}
     input{display: none;}
     .lupaMenosWidth{display: inline; width: 100%; margin-left: 2px; padding:15px; border-radius: 50%;}
